@@ -32,6 +32,37 @@ public class CsCollections
             Console.WriteLine(names[i]);
         }
 
+        // The last element 
+        Console.WriteLine("Last element: " + names[names.Count - 1]);
 
+        //// Removing 
+        //// In Removing We have two ways: Remove(), RemoveAt()
+        //// Remove() needs the element you want to remove
+        //// RemoveAt() needs the index of element you want to remove
+
+        //names.Remove("Omar"); // now the list is ["Abdo", "Joe"]
+        //names.RemoveAt(0); // now the list is ["Joe"]
+
+        //foreach (string name in names)
+        //{
+        //    Console.WriteLine(name);
+        //}
+
+        // Checking lists
+        // We have Contains(), IndexOf()
+        // Contains() returns boolean value whether the list contains that item or not, expects you to pass the element you want to check that if it's in the list
+        // IndexOf() returns the index of a specified element, expects you pass the element you want to check the index for it
+
+        if(names.Contains("Ahmed")) // the value of the condition is false 
+        {
+            Console.WriteLine("Hello ahmed!");
+        }
+        else
+        {
+            Console.WriteLine("There is no ahmed in list");
+        }
+
+        Console.WriteLine("Index of Joe is: " + names.IndexOf("Joe"));
+        Console.WriteLine("Index of Alan is: " + names.IndexOf("Alan")); // -1 means not found
     }
 }

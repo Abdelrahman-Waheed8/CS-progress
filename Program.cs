@@ -64,5 +64,10 @@ public class CsCollections
 
         Console.WriteLine("Index of Joe is: " + names.IndexOf("Joe"));
         Console.WriteLine("Index of Alan is: " + names.IndexOf("Alan")); // -1 means not found
+
+        // Built-in functions for sorting lists
+        // Sort(), Reverse()
+        names.Sort(); // Sorts the list alphapitcally a-z
+        names.Reverse(); // Reverse sort the list from z-a
     }
 }

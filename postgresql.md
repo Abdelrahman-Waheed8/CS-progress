@@ -23,7 +23,7 @@ To check the version of postgres you're using:
 ```
 SELECT version();
 ```
-\d to see the relations and \d to see the tables in a db
+\d to see the relations and \dt to see the tables in a db
 
 ### DB -> schema -> table -> rows
 

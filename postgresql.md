@@ -94,9 +94,13 @@ CREATE TABLE basics.products_basic (
 ```
 
 ```REAL``` is also a datatype in PostgreSQL where it rounds the value to the nearest value possible typically we use it for scientific measurements, temperature logs...etc
+
 ```date``` what differs date from timestamp is that timestamp stores the date with specific time but date only stores the date without any specific time 
+
 ```point``` datatype in PostgreSQL is used for storing coordinates of a point and you can access it by using [] as if indices
+
 ```UUID``` is a datatype in PostgreSQL that stores universally unique identifier you might need while specifiying the column the gen_random_uuid() to store a random UUID
+
 ```JSONB``` JSONB is a PostgreSQL data type that stores JSON data in a binary format. It's an enhanced version of the regular JSON type with significant performance and functionality advantages.
 syntax for JSONB
 ```

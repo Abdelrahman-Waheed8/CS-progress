@@ -39,6 +39,9 @@ public class Cup : IObject
 public interface IMovable
 {
     void Move(int distance);
+
+// default method any class can override it if not overrided it stays as it is 
+    void CanMove() => Console.WriteLine("I can move!");
     int TotalDistance { get; }
 }
 

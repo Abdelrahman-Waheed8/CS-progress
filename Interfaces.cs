@@ -35,3 +35,50 @@ public class Cup : IObject
         return "destroyed a cup";
     }
 }
+
+public interface IMovable
+{
+    void Move(int distance);
+    int TotalDistance { get; }
+}
+
+public class Car : IMovable
+{
+    public int TotalDistance {get; private set;}
+
+    public void Move(int distance)
+    {
+        TotalDistance += distance;
+    }
+}
+public class Robot : IMovable
+{
+    public int TotalDistance {get; private set;}
+
+    public void Move(int distance)
+    {
+        TotalDistance += distance;
+    }
+}
+public class Ship : IMovable
+{
+    public int TotalDistance {get; private set;}
+
+    public void Move(int distance)
+    {
+        TotalDistance += distance;
+    }
+}
+
+// // Polymorphism
+// void Moveall(IMovable[] movable, int distance)
+// {
+//     foreach(var m in movable)
+//     {
+//         m.Move(distance);
+//     }
+// }
+
+// // Treating classes implementing same interface as a group (as if the interface IMovable is a data type)
+// IMovable[] fleet = {new Car(), new Robot(), new Ship()};
+// Moveall(fleet, 10);

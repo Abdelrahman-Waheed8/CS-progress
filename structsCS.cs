@@ -17,6 +17,9 @@ public class Solution
         Point p1;
         p1.x = x;
         p1.y = y;
+
+        // also we can use 
+        // Point p2 = new Point();
         return $"Point({p1.x}, {p1.y})";
     }
 }

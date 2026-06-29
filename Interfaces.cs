@@ -42,6 +42,11 @@ public interface IMovable
     int TotalDistance { get; }
 }
 
+public interface ISoundMaker
+{
+    string MakeSound();
+}
+
 public class Car : IMovable
 {
     public int TotalDistance {get; private set;}
@@ -82,3 +87,26 @@ public class Ship : IMovable
 // // Treating classes implementing same interface as a group (as if the interface IMovable is a data type)
 // IMovable[] fleet = {new Car(), new Robot(), new Ship()};
 // Moveall(fleet, 10);
+
+// Multiple Interfaces
+// while c# doesn't support multiple class inheritance it can implement multiple interfaces making it capable of doing alot
+// classes implementing two interfaces must implement everything from the two interfaces ... and so on
+
+// Must take in considertion the Interface Segregation principle from the SOLID principles where it states that a classs
+// should never implement an interface it doesn't use
+
+// Implemented the two interfaces declared above
+public class SpaceShip: IMovable, ISoundMaker
+{
+    public int TotalDistance {get; private set;}
+
+    public void Move(int distance)
+    {
+        TotalDistance += distance;
+    }
+
+    public string MakeSound()
+    {
+        return "Beep boop!";
+    }
+}

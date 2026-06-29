@@ -12,8 +12,10 @@ public abstract class Creature
     }
 }
 
+// Derived classes MUST implement every method
 public class Human : Creature
 {
+    // Must use override for abstract methods
     public override string Eat()
     {
         return "ate burger";

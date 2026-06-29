@@ -84,12 +84,12 @@ I've also encountered some new datatypes:
 ```
 CREATE TABLE basics.products_basic (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL, -- string but with max length of 100 characters
-    description TEXT, -- string type
+    name VARCHAR(100) NOT NULL,    -- string but with max length of 100 characters
+    description TEXT,              -- string type
     stock INTEGER DEFAULT 0,
-    total_view BIGINT DEFAULT 0, -- LARGE INTEGER --> BIGINT 
-    price NUMERIC(10,2), --- NUMERIC STORES FLOATING NUMBERS accepts two parameters the first one is the number of digits to accept and the second is the number of floating numbers
-    is_active BOOLEAN DEFAULT true --- BOOLEAN true or false
+    total_view BIGINT DEFAULT 0,   -- LARGE INTEGER --> BIGINT 
+    price NUMERIC(10,2),           -- NUMERIC STORES FLOATING NUMBERS accepts two parameters the first one is the number of digits to accept and the second is the number of floating numbers
+    is_active BOOLEAN DEFAULT true -- BOOLEAN true or false
 );
 ```
 

@@ -1,4 +1,5 @@
 using System;
+// Structs are unlike classes they copy by value not by refrence like classes and stored in the stack unlike classes in heap
 
 // Define your Point struct here
 public struct Point

@@ -95,7 +95,7 @@ public class Ship : IMovable
 // Must take in considertion the Interface Segregation principle from the SOLID principles where it states that a classs
 // should never implement an interface it doesn't use
 
-// Implemented the two interfaces declared above
+// Implemented the two interfaces declared above and implementing the Interface segregation
 public class SpaceShip: IMovable, ISoundMaker
 {
     public int TotalDistance {get; private set;}
